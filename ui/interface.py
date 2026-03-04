@@ -6,13 +6,19 @@ from tkinter import filedialog as fd
 from PIL import ImageTk, Image, ImageDraw, ImageTk, ImageOps, ImageChops
 from tkcalendar import Calendar, DateEntry
 from datetime import date
+import sys
 from pathlib import Path
 
 # IMPORT MAIN
 from data.banco import *
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+if getattr(sys, 'frozen', False):
+    BASE_DIR = Path(sys._MEIPASS)
+else:
+    BASE_DIR = Path(__file__).resolve().parent.parent
+
 IMG_DIR = BASE_DIR / "images"
+DATA_DIR = BASE_DIR / "data"
 
 co0 = "#2e2d2b"  # Preta
 co1 = "#feffff"  # Branca   
