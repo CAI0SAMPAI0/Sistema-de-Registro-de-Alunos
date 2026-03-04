@@ -20,26 +20,6 @@ tkcalendar (seleção de datas)
 
 pathlib (controle profissional de caminhos)
 
-Estrutura do Projeto
-alunos/
-│
-├── ui/
-│   ├── __init__.py
-│   └── interface.py
-│
-├── data/
-│   ├── __init__.py
-│   ├── banco.py
-│   └── estudante.db (criado automaticamente)
-│
-├── images/
-│   ├── add.png
-│   ├── delete.png
-│   ├── refresh.png
-│   ├── logo.png
-│   └── logo2.png
-│
-└── README.md
 Funcionalidades
 
 Cadastro de aluno com:
