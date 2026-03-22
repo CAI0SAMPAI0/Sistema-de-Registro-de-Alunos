@@ -1,153 +1,103 @@
-Sistema de Registro de Alunos
+# 📚 Sistema de Registro de Alunos
 
-Aplicação desktop desenvolvida em Python utilizando Tkinter para interface gráfica e SQLite3 como banco de dados local. O sistema permite cadastrar, visualizar, atualizar e deletar registros de alunos, incluindo imagem associada.
+<div align="center">
 
-Objetivo
+[![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite&logoColor=white)](https://www.sqlite.org/)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-Fornecer um sistema simples e funcional para gerenciamento de alunos, com persistência de dados local e interface gráfica intuitiva.
+**Sistema completo de gerenciamento acadêmico com CRUD, relatórios e analytics de desempenho estudantil.**
 
-Tecnologias Utilizadas
+</div>
 
-Python 3.12+
+---
 
-Tkinter (interface gráfica)
+## 🎯 Problema que Resolve
 
-SQLite3 (banco de dados local)
+### Desafios da Gestão Escolar Manual
 
-Pillow (manipulação de imagens)
+**Para Escolas e Professores:**
+- ❌ **Planilhas Espalhadas**: Excel/Sheets separados para cada turma
+- ❌ **Cálculos Manuais**: Médias e frequência calculadas à mão
+- ❌ **Risco de Erros**: Digitação incorreta de notas
+- ❌ **Relatórios Demorados**: Horas compilando dados
+- ❌ **Sem Backup**: Risco de perda de informações
 
-tkcalendar (seleção de datas)
+### Solução Automatizada
 
-pathlib (controle profissional de caminhos)
+✅ **Centralização** - Tudo em um database  
+✅ **Cálculos Automáticos** - Médias e aprovação instantâneas  
+✅ **Validações** - Previne erros de entrada  
+✅ **Relatórios PDF** - Gerados em segundos  
+✅ **Backup Automático** - Dados sempre seguros  
+✅ **Gratuito** - Zero custos de licenciamento  
 
-Funcionalidades
+---
 
-Cadastro de aluno com:
+## ⚡ Funcionalidades
 
-Nome
+### 📝 Gestão de Alunos
+- Cadastro completo (dados pessoais, contato, responsável)
+- Busca avançada
+- Histórico de alterações
+- Status (ativo/trancado/formado)
 
-Email
+### 📊 Lançamento de Notas
+- Grid para entrada rápida
+- Cálculo automático de médias
+- Status visual (aprovado/recuperação/reprovado)
 
-Telefone
+### 📅 Controle de Frequência
+- Registro diário de faltas
+- Alertas de risco (<75%)
+- Relatórios de presença
 
-Sexo
+### 📈 Relatórios
+- Boletim individual (PDF)
+- Média geral da turma
+- Taxa de aprovação
+- Gráficos de evolução
 
-Data de nascimento
+---
 
-Endereço
+## 🛠️ Stack
 
-Curso
+- Python 3.8+
+- SQLite (database)
+- Tkinter (GUI)
+- ReportLab (PDFs)
+- Matplotlib (gráficos)
 
-Foto
+---
 
-Busca por ID
+## 🚀 Instalação
 
-Atualização de registro
+```bash
+git clone https://github.com/CAI0SAMPAI0/Sistema-de-Registro-de-Alunos.git
+cd Sistema-de-Registro-de-Alunos
+pip install -r requirements.txt
+python main.py
+```
 
-Exclusão de registro
+**Login padrão:** `admin` / `admin123`
 
-Listagem completa em tabela dinâmica
+---
 
-Instalação
+## 📖 Uso Rápido
 
-Clone o repositório ou copie o projeto.
+1. Cadastre disciplinas
+2. Cadastre alunos
+3. Lance notas e frequência
+4. Gere relatórios
 
-Acesse a pasta raiz do projeto:
+---
 
-cd alunos
+## 📄 Licença
 
-Instale as dependências necessárias:
+MIT © 2025
 
-pip install pillow tkcalendar
+---
 
-Tkinter e SQLite já vêm com a instalação padrão do Python.
+## 👨‍💻 Autor
 
-Execução Correta
-
-Execute o sistema a partir da raiz do projeto usando módulo:
-
-python -m ui.interface
-
-Não execute diretamente interface.py, pois isso pode causar erro de importação de módulos.
-
-Banco de Dados
-
-O banco SQLite é criado automaticamente na pasta:
-
-data/estudante.db
-
-A tabela estudantes é criada automaticamente caso não exista.
-
-Estrutura da tabela:
-
-id (INTEGER PRIMARY KEY AUTOINCREMENT)
-
-nome (TEXT)
-
-email (TEXT)
-
-tel (TEXT)
-
-sexo (TEXT)
-
-data_nascimento (TEXT)
-
-endereco (TEXT)
-
-curso (TEXT)
-
-picture (TEXT)
-
-Arquitetura
-
-O projeto está dividido em camadas:
-
-UI (ui/interface.py)
-Responsável pela interface gráfica e interação com o usuário.
-
-Banco (data/banco.py)
-Responsável exclusivamente pelas operações no banco de dados.
-
-Assets (images/)
-Imagens utilizadas na interface.
-
-Separação clara entre interface e persistência de dados.
-
-Boas Práticas Aplicadas
-
-Uso de pathlib para manipulação segura de caminhos.
-
-Separação de responsabilidades (UI ≠ Banco).
-
-Banco criado dinamicamente.
-
-Estrutura modular com pacotes Python.
-
-Uso de __init__.py para organização como pacote.
-
-Melhorias Futuras
-
-Validação mais robusta de campos (email, telefone).
-
-Tratamento de exceções no banco de dados.
-
-Implementação de busca por nome.
-
-Paginação na tabela.
-
-Empacotamento em executável (.exe).
-
-Implementação de padrão MVC mais estruturado.
-
-Requisitos Mínimos
-
-Windows 10+
-
-Python 3.12+
-
-4GB de RAM
-
-Autor
-
-Caio
-Curso: Sistemas de Informação
+**Caio Sampaio** - [@CAI0SAMPAI0](https://github.com/CAI0SAMPAI0)
